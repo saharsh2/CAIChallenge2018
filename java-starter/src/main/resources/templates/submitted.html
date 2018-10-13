@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Form Submitted</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Result</h1>
+    <p th:text="'First Name: ' + ${registration.first}"></p>
+    <p th:text="'Last Name:  '  + ${registration.last}"></p>
+    <p th:text="'Address:    ' + ${registration.address}"></p>
+    <p th:text="'Id:         '  + ${registration.id}"></p><br/><br/>
+    <p th:text="'Your auto-generated fiid is: ' + ${registration.fiid}"></p>
+</body>
+</html>

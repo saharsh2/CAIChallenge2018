@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registration</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" th:href="@{/assets/main.css}"
+          href="../../assets/main.css" />
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Spring Boot</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li class="active">Drone Registration</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h1><header>Registration</header></h1>
+    <form action="#" th:action="@{/registration}" th:object="${registration}" method="post">
+        <p>First name: <input type="text" th:field="*{first}" /></p>
+        <p>Last name:  <input type="text" th:field="*{last}" /></p>
+        <p>Address:    <input type="text" th:field="*{address}" /></p>
+        <p>Drone Id:   <input type="text" th:field="*{id}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+
+</div>
+<!-- /.container -->
+
+</body>
+</html>
